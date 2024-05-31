@@ -20,7 +20,6 @@ const { posts, FirstBig = false } = Astro.props
 	{
 		posts.map(async (post) => {
 			const { remarkPluginFrontmatter } = await post.render()
-
 			return (
 				<PostCard
 					id={post.id}
